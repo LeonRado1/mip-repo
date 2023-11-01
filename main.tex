@@ -1,0 +1,58 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage{graphicx}
+\usepackage{fourier}
+\usepackage{indentfirst}
+
+\title{\Huge Cloud Databases}
+\author{\Large Leon Radó}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\begin{figure}[b]
+    \centering
+    \includegraphics[width=0.8\linewidth]{images/STU-FIIT.png}
+\end{figure}
+\thispagestyle{empty}
+
+\clearpage
+\tableofcontents
+
+\clearpage
+\begin{abstract}
+    The following article provides a brief overview of cloud computing, especially databases. Firstly, it describes the main principles of cloud databases, their history, differences with standard on-premises databases, and options of implementation. Later, the reader will learn about different types of databases, their benefits, challenges, and concerns. In this section essential properties of cloud databases like cost-effectiveness, flexibility, accessibility, and maintenance are compared. Afterwards, this writing introduces leading cloud database providers and the services they offer, for example, Amazon Web Services (AWS), Google Cloud, Microsoft Azure, and others. In the end, it mentions the latest trends in cloud computing like serverless databases as well as the future of cloud databases. After reading this paper, the reader will gain basic knowledge of database systems and understand the importance and rising popularity of cloud computing.\\\\
+    \footnotesize{
+        \textbf{Keywords:}
+        \textit{database, cloud computing, relational database, nosql, cloud provider}
+    }
+\end{abstract}
+\clearpage
+
+\section{Introduction}
+    A cloud database is a particular type of database that works just like a standard on-premise database system but differs by its type of placement. While traditional databases exist on physical servers, cloud databases operate in a cloud environment. That means the database system is not located in the business infrastructure, but instead, it is accessible via the cloud by a specific cloud service provider. \textit{Cloud computing has become the norm of the today's computing world. This paradigm shift is looking for the databases that are compatible in all respect.}\cite{03} Each of these two types has an advantage over the other in terms of cost-effectiveness, accessibility, performance, security, and many other important characteristics, so it is up to the business owner to choose the right option for the purpose and requirements of his business. \par In this article, I will mainly focus on the benefits and concerns that come with cloud databases to understand how these new types of databases work and what improvements they can offer to the world of data management.
+\clearpage
+
+\section{Cloud Database Implementation}
+    There are two primary methods to implement a cloud database, the thing they have in common is the presence of a third-party cloud service provider. One of these options is operating the database on the cloud independently of the provider with the virtual machine. Another option is using the database as a service (DBaaS).
+    
+    \subsection{Virtual Machine Image}
+        Providers allow users to create a virtual machine image to directly access a database stored on the cloud. This virtual machine includes the database software, operating system, and necessary configurations.\par The owner pays for the specific resources he needs, the cost is predictable and based on the resources and services he selects. This type of implementation requires manual and more demanding management but offers better control of the database and more options for customization.
+    
+    \subsection{Database as a Service}
+        DBaaS is a more commonly used method to implement a cloud database. This service provides a database for the user through the Internet and includes hosting, setup, and management of the system, so the user doesn't have to worry about additional complex work related to maintaining a database. DBaaS most often follows a pay-as-you-go pricing method, which means the owner pays just for the resources utilized at the moment.
+        \begin{figure}[t]
+            \centering
+            \includegraphics[width=1\linewidth]{images/onpremise-cloud.png}
+            \caption{Comparison of Database Systems}
+            \label{fig:comparison}
+        \end{figure}
+    \clearpage
+        
+    
+\section*{}
+\clearpage
+\bibliographystyle{plain}
+\bibliography{refs}
+
+\end{document}
