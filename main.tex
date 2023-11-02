@@ -40,19 +40,51 @@
         Providers allow users to create a virtual machine image to directly access a database stored on the cloud. This virtual machine includes the database software, operating system, and necessary configurations.\par The owner pays for the specific resources he needs, the cost is predictable and based on the resources and services he selects. This type of implementation requires manual and more demanding management but offers better control of the database and more options for customization.
     
     \subsection{Database as a Service}
-        DBaaS is a more commonly used method to implement a cloud database. This service provides a database for the user through the Internet and includes hosting, setup, and management of the system, so the user doesn't have to worry about additional complex work related to maintaining a database. DBaaS most often follows a pay-as-you-go pricing method, which means the owner pays just for the resources utilized at the moment.
-        \begin{figure}[t]
+        DBaaS is a more commonly used method to implement a cloud database. This service provides a database for the user through the Internet and includes hosting, setup, and management of the system, so the user doesn't have to worry about additional complex work related to maintaining a database. \textit{Enterprises may focus on their core competencies instead of having to maintain complex IT landscapes.}\cite{11}\par DBaaS most often follows a pay-as-you-go pricing method, which means the owner pays just for the resources utilized at the moment.
+        \begin{figure}[b]
             \centering
             \includegraphics[width=1\linewidth]{images/onpremise-cloud.png}
             \caption{Comparison of Database Systems}
             \label{fig:comparison}
         \end{figure}
-    \clearpage
-        
+\clearpage
+
+\section{Types of Cloud Databases}
+    Just like standard on-premise databases, cloud databases can be divided into relational databases and non-relational, usually referred to as NoSQL databases. When choosing the right database it's important to consider the strengths, weaknesses, and use cases of both types.
+
+    \subsection{Relational Databases}
+        These databases store structured information organized into rows and columns, the structure of the data has to be defined in advance. Relation databases are typically used for applications with structured data, for example, transactional systems, and offer consistency and reliability, however, they are usually scaled vertically, which means they can be demanding on server resources like CPU and RAM.
+
+    \subsection{NoSQL Databases}
+        Non-relational databases are designed to work with a large amount of unstructured data, that is most often stored in key-value pairs without predefined format. This type of database is adequate for example for web applications that store a variety of information. \textit{NoSQL databases were born to meet performance needs, leaving other details like atomicity in the background.}\cite{06}\\
+        \begin{figure}[h]
+            \centering
+            \includegraphics[width=1\linewidth]{images/relational-nosql.png}
+            \caption{Structure of Relational and NoSQL Database}
+            \label{fig:structure}
+        \end{figure}
+\clearpage
+
+\section{Benefits of Cloud Databases}
+    \subsection{Accessibility}
+        Accessing a cloud database isn't limited by geographical location and can be done from anywhere with a stable Internet connection. This feature is especially useful for organizations that need access to the database from different locations.
     
+    \subsection{Scalability}
+    \subsection{Managed Services}
+    \subsection{Cost-Efficiency}
+    \subsection{Disaster Recovery}
+\clearpage
+
+\section{Concerns of Cloud Databases}
+    \subsection{Data Security}
+    \subsection{Network Dependency}
+    \subsection{Vendor Lock-In}
+    \subsection{Limited Control}
+\clearpage
+
 \section*{}
 \clearpage
-\bibliographystyle{plain}
+\bibliographystyle{unsrt}
 \bibliography{refs}
 
 \end{document}
