@@ -21,16 +21,13 @@
 
 \clearpage
 \begin{abstract}
-    The following article provides a brief overview of cloud computing, especially databases. Firstly, it describes the main principles of cloud databases, their history, differences with standard on-premises databases, and options of implementation. Later, the reader will learn about different types of databases, their benefits, challenges, and concerns. In this section essential properties of cloud databases like cost-effectiveness, flexibility, accessibility, and maintenance are compared. Afterwards, this writing introduces leading cloud database providers and the services they offer, for example, Amazon Web Services (AWS), Google Cloud, Microsoft Azure, and others. In the end, it mentions the latest trends in cloud computing like serverless databases as well as the future of cloud databases. After reading this paper, the reader will gain basic knowledge of database systems and understand the importance and rising popularity of cloud computing.\\\\
-    \footnotesize{
-        \textbf{Keywords:}
-        \textit{database, cloud computing, relational database, nosql, cloud provider}
-    }
+    The following article provides a brief overview of cloud computing, especially databases. Firstly, it describes the main principles of cloud databases, their differences with standard on-premises databases, and options of implementation. Later, the reader will learn about different types of database systems, as well as the benefits, disadvantages, and concerns of cloud databases. In this section, essential properties of cloud databases, like cost-effectiveness, flexibility, accessibility, and maintenance are evaluated. Afterwards, this writing introduces leading cloud database providers and the services they offer, for example, Amazon Web Services (AWS), Google Cloud Platform, Microsoft Azure, and others. In the end, it mentions the latest trends and future of cloud computing, like serverless databases or multi-cloud database solutions. After reading this paper, the reader will gain basic knowledge of database systems and understand the importance and rising popularity of cloud computing.\\\\
+    \footnotesize{\textbf{Keywords: }\textit{database, cloud computing, relational database, nosql, cloud provider}}
 \end{abstract}
 \clearpage
 
 \section{Introduction}
-    A cloud database is a particular type of database that works just like a standard on-premise database system but differs by its type of placement. While traditional databases exist on physical servers, cloud databases operate in a cloud environment. That means the database system is not located in the business infrastructure, but instead, it is accessible via the cloud by a specific cloud service provider. \textit{Cloud computing has become the norm of the today's computing world. This paradigm shift is looking for the databases that are compatible in all respect.}\cite{03} Each of these two types has an advantage over the other in terms of cost-effectiveness, accessibility, performance, security, and many other important characteristics, so it is up to the business owner to choose the right option for the purpose and requirements of his business. \par In this article, I will mainly focus on the benefits and concerns that come with cloud databases to understand how these new types of databases work and what improvements they can offer to the world of data management.
+    A cloud database is a particular type of database that works just like a standard on-premise database system but differs by its type of placement. While traditional databases exist on physical servers, cloud databases operate in a cloud environment. That means the database system is not located in the business infrastructure, but instead, it is accessible via the cloud by a specific cloud service provider. \textit{Cloud computing has become the norm of the today's computing world. This paradigm shift is looking for the databases that are compatible in all respect.}\cite{03} Each of these two types has an advantage over the other in terms of cost-effectiveness, accessibility, performance, security, and many other important characteristics, so it is up to the business owner to choose the right option for the purpose and requirements of his business. \par In this article, I will mainly focus on the benefits and disadvantages that come with cloud databases to understand how these new types of databases work and what improvements they can offer to the world of data management.
 \clearpage
 
 \section{Cloud Database Implementation}
@@ -70,20 +67,58 @@
         Accessing a cloud database isn't limited by geographical location and can be done from anywhere with a stable Internet connection. This feature is especially useful for organizations that need access to the database from different locations.
     
     \subsection{Scalability}
-    \subsection{Managed Services}
+        Cloud databases are designed to be highly scalable, which means they can process vast amounts of data with great performance. They also support a large amount of users and applications without the need for additional hardware installation.
+
     \subsection{Cost-Efficiency}
+        Because of the missing need for investment into hardware installation, cloud databases are more cost-efficient. \textit{Cloud computing can provide an almost immediate access to hardware resources, with no upfront capital investments for users, leading to a faster time to market in many businesses.}\cite{12}\par The pay-as-you-go model also gives assurance that enterprises pay for the resources, they actually utilize. However, it's always important to regularly analyze and optimize the resources to avoid unnecessary overspending.
+        
+    \subsection{Managed Services}
+        Cloud databases are in most cases managed by cloud providers, which results in enhanced reliability because of their high level of expertise in this field. Owners don't have to worry about tasks like database administration, patching, and maintenance.
+        
     \subsection{Disaster Recovery}
+        Cloud providers offer services to automatically backup and recover the data in need, which results in a decreased risk of data loss in case of natural disaster or hardware malfunction. \textit{Since all the data is stored in the cloud, backing it up and restoring the same is relatively much easier than storing the same on a physical device.}\cite{13}
 \clearpage
 
-\section{Concerns of Cloud Databases}
+\section{Disadvantages and Concerns of Cloud Databases}
     \subsection{Data Security}
-    \subsection{Network Dependency}
-    \subsection{Vendor Lock-In}
+        Despite the fact cloud databases have high security standards, there is always a risk of information theft and unauthorized access. \textit{The chances that host company may violate the privacy of its customers and access data without permission, makes some potential customers worried.}\cite{02} Since the data aren't stored locally, the owners need to reconsider their choice of storing sensitive information.
+
     \subsection{Limited Control}
+        These types of databases are almost fully managed by a third-party provider, which can be unsuitable for businesses with special requirements because they aren't aware of how their data are accessed and managed. Options for customization are also very limited.
+        
+    \subsection{Network Dependency}
+        Cloud databases rely on the Internet connection. This can be really problematic during network outages or other associated issues, especially for applications requiring low-latency real-time response.\par Furthermore, this type of service is always prone to serious malfunctions and interruptions. \textit{Even the best Cloud service providers run into this kind of trouble, in spite of keeping up high standards of maintenance.}\cite{14}
+        
+    \subsection{Vendor Lock-In}
+        Organizations that began to use a cloud database are heavily dependent on the particular cloud provider. Migrating to another cloud database or an on-premise database in the future can be very difficult and expensive.
+
+    
+    \begin{table}[t]
+        \centering
+        \includegraphics[width=0.65\linewidth]{images/benefits-disadvantages.png}
+        \caption{Benefits, Disadvantages, and Concerns of Cloud Databases}
+        \label{tab:benefits}
+    \end{table}
+\clearpage
+
+\section{Leading Cloud Database Providers}
+    \subsection{Amazon Web Services}
+    \subsection{Google Cloud Platform}
+    \subsection{Microsoft Azure}
+    \subsection{IBM Cloud}
+    \subsection{MongoDB Atlas}
+\clearpage
+
+\section{The Latest Trends in Cloud Databases}
+    \subsection{Serverless Databases}
+    \subsection{Multi-Cloud Database Solutions}
+    \subsection{AI in Database Management}
+\clearpage
+
+\section{Conclusion}
 \clearpage
 
 \section*{}
-\clearpage
 \bibliographystyle{unsrt}
 \bibliography{refs}
 
