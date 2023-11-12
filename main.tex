@@ -21,7 +21,7 @@
 
 \clearpage
 \begin{abstract}
-    The following article provides a brief overview of cloud computing, especially databases. Firstly, it describes the main principles of cloud databases, their differences with standard on-premises databases, and options of implementation. Later, the reader will learn about different types of database systems, as well as the benefits, disadvantages, and concerns of cloud databases. In this section, essential properties of cloud databases, like cost-effectiveness, flexibility, accessibility, and maintenance are evaluated. Afterwards, this writing introduces leading cloud database providers and the services they offer, for example, Amazon Web Services (AWS), Google Cloud Platform, Microsoft Azure, and others. In the end, it mentions the latest trends and future of cloud computing, like serverless databases or multi-cloud database solutions. After reading this paper, the reader will gain basic knowledge of database systems and understand the importance and rising popularity of cloud computing.\\\\
+    The following article provides a brief overview of cloud computing, especially databases. Firstly, it describes the main principles of cloud databases, their differences from standard on-premises databases, and their options of implementation. Later, the reader will learn about the process of database search with the use of indexes. Afterward, this writing introduces different types of database systems, as well as the benefits, disadvantages, and concerns of cloud databases. In this section, essential properties of cloud databases, like cost-effectiveness, flexibility, accessibility, and maintenance are evaluated. In the end, it mentions the latest trends and future of cloud computing, like serverless databases and multi-cloud database solutions. After reading this paper, the reader will gain basic knowledge of database systems and understand the importance and rising popularity of cloud computing.\\\\
     \footnotesize{\textbf{Keywords: }\textit{database, cloud computing, relational database, nosql, cloud provider}}
 \end{abstract}
 \clearpage
@@ -62,6 +62,31 @@
         \end{figure}
 \clearpage
 
+\section{Database Search}
+    In order to retrieve information from a database, the corresponding database has to go through the process of database search. After the user provides a search query related to the information he wants to extract, the database starts searching for the relevant data. 
+    
+    \subsection{Indexing}
+        Comparing every record stored in the database to the specific search query can be really time-consuming, especially for larger database systems. However, this problem can be effectively resolved by using indexes. \textit{To gain the speed benefits of indexing at retrieval time, the indexing algorithm is proposed and an index table is built by this algorithm in advance.}\cite{15}\par Indexing ensures that each record in the database obtains a new key-value pair data structure, where the key is a column with the content that might be potentially queried, and the value is a reference to the exact location in the database.
+    
+    \subsection{Query Language}
+        When the user needs to extract information from a database, it is necessary for him to use language compatible with that database. This language will mostly depend on whether the database is relational or non-relational but also on the respective database provider.\par The following example shows a search query for data from the 'books' category by the author 'Joel Lord' from the relational and NoSQL databases, respectively.
+    \clearpage
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.9\linewidth]{images/sql.png}
+        \caption{Search Query in SQL (Structured Query Language) \cite{101}}
+        \label{fig:sql}
+    \end{figure}
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.9\linewidth]{images/mongodb.png}
+        \caption{Search Query in MongoDB Query Language \cite{101}}
+        \label{fig:mongodb}
+    \end{figure}
+\clearpage
+
 \section{Benefits of Cloud Databases}
     \subsection{Accessibility}
         Accessing a cloud database isn't limited by geographical location and can be done from anywhere with a stable Internet connection. This feature is especially useful for organizations that need access to the database from different locations.
@@ -95,18 +120,10 @@
     
     \begin{table}[t]
         \centering
-        \includegraphics[width=0.65\linewidth]{images/benefits-disadvantages.png}
+        \includegraphics[width=0.65\linewidth]{images/benefits.png}
         \caption{Benefits, Disadvantages, and Concerns of Cloud Databases}
         \label{tab:benefits}
     \end{table}
-\clearpage
-
-\section{Leading Cloud Database Providers}
-    \subsection{Amazon Web Services}
-    \subsection{Google Cloud Platform}
-    \subsection{Microsoft Azure}
-    \subsection{IBM Cloud}
-    \subsection{MongoDB Atlas}
 \clearpage
 
 \section{The Latest Trends in Cloud Databases}
